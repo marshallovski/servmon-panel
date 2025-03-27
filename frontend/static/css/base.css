@@ -1,0 +1,99 @@
+:root {
+  --font: 'DejaVu Sans', Sans-Serif;
+  --font-icons: 'Material Icons';
+}
+
+html,
+body {
+  --pico-font-family: var(--font);
+}
+
+body {
+  font-family: var(--font) !important;
+}
+
+.material-icons {
+  font-family: var(--font-icons);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+  user-select: none;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.is-centered {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-normal {
+  font-weight: normal;
+}
+
+.no-background {
+  background: none !important;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.no-radius-bottom {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.cds--cc--chart-wrapper {
+  --cds-charts-font-family: var(--font);
+  --cds-charts-font-family-condensed: var(--font);
+}
+
+@font-face {
+  font-family: 'DejaVu Sans';
+  src: url('/assets/fonts/DejaVuSans-webfont.woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DejaVu Sans';
+  src: url('/assets/fonts/DejaVuSans-Bold-webfont.woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  src: url('/assets/fonts/MaterialIcons-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+

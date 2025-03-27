@@ -1,0 +1,16 @@
+{
+  "name": "servmonpanel-backend",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "@polka/send-type": "^0.5.2",
+    "cors": "^2.8.5",
+    "polka": "^0.5.2",
+    "showdown": "^2.1.0",
+    "systeminformation": "^5.25.11",
+    "trid": "^0.1.2"
+  }
+}

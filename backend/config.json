@@ -1,0 +1,13 @@
+{
+    "version": "0.0.0-dev",
+    "port": 2203,
+    "hostname": "localhost",
+    "server": {
+        "name": "boltcat",
+        "serverIdLength": 7
+    },
+    "notifyServer": {
+        "url": "https://ntfy.sh/HbIeSQDanY4B2eAo-boltcat",
+        "method": "POST"
+    }
+}
