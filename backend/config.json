@@ -3,11 +3,11 @@
     "port": 2203,
     "hostname": "localhost",
     "server": {
-        "name": "boltcat",
+        "name": "servername",
         "serverIdLength": 7
     },
     "notifyServer": {
-        "url": "https://ntfy.sh/HbIeSQDanY4B2eAo-boltcat",
+        "url": "https://ntfy.sh/yoururl",
         "method": "POST"
     }
 }
