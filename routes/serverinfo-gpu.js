@@ -6,18 +6,18 @@ polkaApp.get('/server/info/hardware/gpu', async (req, res) => {
     const gpuData = await graphics();
 
     const gpuMainData = gpuData?.controllers[0];
-    const mainDisplayData = gpuData.displays.find(m => m.main === true);
+    const mainDisplayData = gpuData?.displays?.find(m => m.main === true);
 
     const response = {
         ok: true,
         list: gpuData?.controllers,
         displays: gpuData?.displays,
         display: {
-            vendor: mainDisplayData.vendor,
-            model: mainDisplayData.model,
-            connection: mainDisplayData.connection,
-            resolution: `${mainDisplayData.currentResX}x${mainDisplayData.currentResY}`,
-            refreshRate: mainDisplayData.currentRefreshRate
+            vendor: mainDisplayData?.vendor,
+            model: mainDisplayData?.model,
+            connection: mainDisplayData?.connection,
+            resolution: `${mainDisplayData?.currentResX}x${mainDisplayData?.currentResY}`,
+            refreshRate: mainDisplayData?.currentRefreshRate
         },
         main: {
             vendor: gpuMainData?.vendor,
