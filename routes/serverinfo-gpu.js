@@ -16,8 +16,8 @@ polkaApp.get('/server/info/hardware/gpu', async (req, res) => {
             vendor: mainDisplayData?.vendor,
             model: mainDisplayData?.model,
             connection: mainDisplayData?.connection,
-            resolution: `${mainDisplayData?.currentResX}x${mainDisplayData?.currentResY}`,
-            refreshRate: mainDisplayData?.currentRefreshRate
+            resolution: `${mainDisplayData?.currentResX ?? '?'}x${mainDisplayData?.currentResY ?? '?'}`,
+            refreshRate: mainDisplayData?.currentRefreshRate ?? '?'
         },
         main: {
             vendor: gpuMainData?.vendor,
