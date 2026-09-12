@@ -12,6 +12,13 @@ Backend uses only ~70MB of RAM. Frontend RAM usage depends on your webserver.
 5. Type `npm install`
 6. Type `npm run build`
 7. Type `cd build && serve .` (or use any web-server and copy files from `build` folder, e.g nginx or Apache)
+
+# Configuring
+Frontend:
+open `frontend/src/js/config.js` and change your hostname
+
+Backend:
+open `backend/config.json`
    
 
 # Screenshots
