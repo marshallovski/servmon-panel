@@ -9,10 +9,10 @@ Backend uses only ~70MB of RAM. Frontend RAM usage depends on your webserver.
 3. Open terminal and type: `npm start`
 -----
 4. Open `frontend` folder
-5. Type `serve .` (or use any web-server, e.g nginx or Apache)
-
-Easy way:
-In the root folder open `start.sh` file (only on Linux)
+5. Type `npm install`
+6. Type `npm run build`
+7. Type `cd build && serve .` (or use any web-server and copy files from `build` folder, e.g nginx or Apache)
+   
 
 # Screenshots
 ![зображення](https://github.com/user-attachments/assets/46789914-e2e2-4e70-8d28-a1d814a3bc68)
