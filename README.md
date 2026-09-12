@@ -3,6 +3,13 @@ A lightweight server-monitoring web panel!
 
 Backend uses only ~70MB of RAM. Frontend RAM usage depends on your webserver.
 
+# Configuring
+Frontend:
+open `frontend/src/lib/config.js` and change your hostname
+
+Backend:
+open `backend/config.json`
+
 # Installing
 1. Open `backend` folder
 2. Install required packages: `npm install`
@@ -10,15 +17,10 @@ Backend uses only ~70MB of RAM. Frontend RAM usage depends on your webserver.
 -----
 4. Open `frontend` folder
 5. Type `npm install`
-6. Type `npm run build`
+6. Type `npm run build` (don't forget to change your server's hostname!)
 7. Type `cd build && serve .` (or use any web-server and copy files from `build` folder, e.g nginx or Apache)
 
-# Configuring
-Frontend:
-open `frontend/src/js/config.js` and change your hostname
 
-Backend:
-open `backend/config.json`
    
 
 # Screenshots
